@@ -4,7 +4,7 @@ public class Song {
     LinkedList<String> artistNames;
     String trackName;
 
-    public void main(LinkedList<String> artistNames, String trackName){
+    public Song(LinkedList<String> artistNames, String trackName){
         this.artistNames = artistNames;
         this.trackName = trackName;
     }
@@ -26,4 +26,6 @@ public class Song {
         }
         return false;
     }
+
+
 }
