@@ -1,8 +1,10 @@
 import java.util.LinkedList;
+import java.io.Serializable;
 
-public class Song {
+public class Song implements Serializable {
     LinkedList<String> artistNames;
     String trackName;
+    private static final long serialVersionUID = 1L;
 
     public Song(LinkedList<String> artistNames, String trackName){
         this.artistNames = artistNames;
@@ -26,6 +28,7 @@ public class Song {
         }
         return false;
     }
+
 
 
 }
